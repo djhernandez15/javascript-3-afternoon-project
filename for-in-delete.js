@@ -40,8 +40,12 @@
 */
 
 function showValues( obj ) {
-  //Code Here
-}
+ let sum = '';
+  for(let prop in obj){
+   sum += obj[prop];
+ } return sum;
+}  
+
 
 
 
@@ -54,7 +58,14 @@ function showValues( obj ) {
 */
 
 //Code Here
-
+function greaterThan10(obj){
+  for(let prop in obj){
+    if (obj[prop] > 10){
+      obj[prop]=0;
+    }
+  }
+  return obj
+}
 
 
 ////////// PROBLEM 3 //////////
